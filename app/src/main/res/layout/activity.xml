@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/edittxt1"
+        android:hint="Enter text"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </EditText>
+
+    <RadioGroup
+        android:id="@+id/radiogroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/edittxt1"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/radiobtn1"
+            android:text="upper"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </RadioButton>
+
+        <RadioButton
+            android:id="@+id/radiobtn2"
+            android:text="lower"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </RadioButton>
+
+        <RadioButton
+            android:id="@+id/radiobtn3"
+            android:text="xyz"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </RadioButton>
+
+
+    </RadioGroup>
+
+
+
+        <CheckBox
+            android:id="@+id/checkbox1"
+            android:text="Revers"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/radiogroup">
+
+        </CheckBox>
+
+    <Button
+        android:id="@+id/finishbtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="FINISH"
+        app:layout_constraintTop_toBottomOf="@+id/radiogroup"
+        tools:layout_editor_absoluteX="53dp"
+        app:layout_constraintRight_toRightOf="parent">
+
+    </Button>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
